@@ -1,0 +1,533 @@
+<!-- DON'T FORGET TO WRITE AS MANY COMMENTS AS YOU CAN SO WE KNOW WHAT EACH THING DOES AND WE CAN EASILY DEBUG THE CODE IF SOMETHING ISN'T WORKING CORRECTLY -->
+<!-- -->
+<!-- -->
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Adding Bootstrap  CSS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> <!-- Adding Google API for jQuery -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  <!-- Adding Bootstrap Javascript -->
+  
+<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'> <!-- Adding font of SIGMAR ONE -->
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'> <!-- Adding font of INDIE FLOWER -->
+
+<!--THIS IS WHERE THE JAVASCRIPT CODE GOES ============================================== -->
+ <header> 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> <!-- Adding Javascript -->
+	<script>
+		$(document).ready(function(){ <!-- Put all Javascript code inside the document ready function -->
+			
+			$('a[href^="#"]').on('click', function(event) { <!-- Looks for click and scrolls to targeted ID -->
+   	 			var target = $( $(this).attr('href') );
+  					if( target.length ) {
+        				event.preventDefault();
+        				$('html, body').animate({
+            				scrollTop: target.offset().top
+        				}, 1000);
+   	 				}
+			});
+			
+			$("#animate").animate({
+            top: '250px',
+            left: '250px',
+            height: '+=50px',
+            width: '+=150px'
+        });
+        
+        $("#containter").animate({
+            top: '250px',
+            left: '250px',
+            height: '+=50px',
+            width: '+=150px'
+        });
+			
+		});
+	</script>
+</header> <!--End of JAVASCRIPT ==================================== -->
+
+<!-- THIS IS WHERE THE CSS GOES ============================================================--> 
+<style> 
+	.navbar-default {
+    	background-color: white;
+    	border-color: #E7E7E7;
+    	font-family: 'Indie Flower', cursive;
+    	font-size: 20px;
+	}
+	.nav:hover {
+		font-color: black;	
+	}
+	h1{
+		padding-top: 120px;
+		font-family: 'Indie Flower', cursive;
+		font-size: 70px;	
+	}
+	h2{
+		font-family: 'Indie Flower', cursive;
+		color: d50e15;
+	}
+	
+	
+	ul {
+		list-style-type:none;
+		float: right;
+		margin:0;
+		right:0;
+		top: 0;
+	}
+	li {
+		margin-right: 1px;
+		float: left;
+	}
+	li a {
+		display:block;
+		min-width:140px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		font-family: 'Indie Flower', cursive;
+		font-size: 20px;
+		color: black;
+		text-decoration: none;
+	}
+	li:hover a {
+		background: #8b2528;
+		color: white;
+	}
+	li:hover ul a {
+		background: #2f3036;
+		color: white;
+		height: 40px;
+		line-height: 40px;
+	}
+	li:hover ul a:hover {
+		background: #8b2528;
+		color: #fff;
+	}	
+	li ul {
+		display: none;
+	}
+	li ul li {
+		display: inline;
+		float: none;
+	}
+	li ul li a {
+		width: auto;
+		min-width: 100px;
+		padding: 0 20px;
+	}
+	
+	
+	<!-- ul {
+		list-style-type:none;
+		float: right;
+		margin:0;
+		right:0;
+		top: 0;
+	}
+	li{
+		padding: 10px 5px 20px 5px;	
+		font-color: black;
+	}
+	li a{
+		display: block;	
+	}
+	li:hover{
+		background-color: #8b2528;
+	}
+	li:hover a{
+		color: black;
+	}
+	ul:hover li:hover a{
+		background-color: #8b2528;
+	}
+	-->
+	
+	footer {
+    	padding: 25px 0;
+    	background: #010101;
+    	text-align: center;
+    	font-weight: normal;
+	}
+	p {
+		text-indent: 2.0em;
+		font-family: 'Indie Flower', cursive;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+  position:relative;
+  margin:0 auto;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 40s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 40s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 40s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  animation-delay: 30s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 20s;
+  -moz-animation-delay: 20s;
+  -o-animation-delay: 20s;
+  animation-delay: 20s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -o-animation-delay: 10s;
+  animation-delay: 10s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+.crop {
+    width: 900px;
+    height: 450px;
+}
+
+div.transbox {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  width: 880px;
+
+}
+
+div.transbox h5 {
+  	margin: 0;
+ 	font-weight: bold;
+ 	font-size: 60px;
+ 	font-family: 'Indie Flower', cursive;
+ 	color: #000000;
+ 	width: 880px;
+
+}
+
+</style> 
+<!-- End of CSS ============================================ -->
+
+<!-- NAVAGATION BAR ================================================================================-->
+<nav id="top" class="navbar navbar-default navbar-fixed-top" style="padding: 10px; ">
+	<div class="container-fluid">
+    	<!--  Helps with mobile display (Collapses navbar when window gets too small) -->
+    	<div class="navbar-header">
+    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a href="http://torbots.com"><img src="http://torbots.com/sites/default/files/torbots%20logo_0.JPG" alt="TorBots" style="width: 150px;" /></a>
+    	</div>
+    	
+    	<!-- Collect the nav links, forms, and other content for toggling -->
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	
+    		<!-- DO WE WANT A SEARCH BAR? ======================== -->
+    		<!--
+    		<form class="navbar-form navbar-right" role="search">
+        		<div class="form-group">
+          			<input type="text" class="form-control" placeholder="Search">
+        		</div>
+        		<button type="submit" class="btn btn-default">Submit</button>
+      		</form>
+      		-->
+      		<!-- DO WE WANT A SEARCH BAR? ======================== -->
+      		
+      		<!-- <ul class="nav navbar-nav navbar-right">
+      			<li><a href="#Home">Home<span class="sr-only">(current)</span></a></li>
+        		<li><a href="#about">About TorBots</a></li>
+        		<li><a href="#awards">Awards</a></li>
+       			 <li><a href="#board">Board Members</a></li>
+       			 
+       			 <li class="dropdown">
+          			<a href="#galleries" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li role="separator" class="divider"></li>
+            			<li><a href="#">Something</a></li>
+            			<li role="separator" class="divider"></li>
+            			<li><a href="#">Something</a></li>
+          			</ul>
+       			 </li>
+       			 
+       			 <li class="dropdown">
+       			 	<a href="#contact" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li role="separator" class="divider"></li>
+            			<li><a href="#">Something</a></li>
+          			</ul>
+        		</li>
+        		
+      		</ul> -->
+      		
+      		<ul>
+      			<li><a href="#Home">Home<span class="sr-only">(current)</span></a></li>
+        		<li><a href="#about">About TorBots</a></li>
+        		<li><a href="#awards">Awards</a></li>
+       			 <li><a href="#board">Board Members</a></li>
+       			 
+       			 <li class="dropdown">
+          			<a href="#galleries" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li role="separator" class="divider"></li>
+            			<li><a href="#">Something</a></li>
+            			<li role="separator" class="divider"></li>
+            			<li><a href="#">Something</a></li>
+          			</ul>
+       			 </li>
+       			 
+       			 <li class="dropdown">
+       			 	<a href="#contact" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li><a href="#">Something</a></li>
+            			<li role="separator" class="divider"></li>
+            			<li><a href="#">Something</a></li>
+          			</ul>
+        		</li>
+        		
+      		</ul>
+      		
+    	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- End of NAVIGATION BAR ======================================= -->
+
+<!-- BODY OF THE PAGE ============================================================================ -->
+<body id="Home" style="padding-top: 120px;">
+
+<!-- PHOTO CROSS FADING ===================================================================================-->
+<center>
+	<div class="main-container container">
+		<div class="row">
+    		<div class="col-xs-12">
+				<center>
+					<div id="cf4a" class="shadow crop">
+  						<img src="http://torbots.com/sites/default/files/IMG_8435_3.JPG" alt="" style="border-radius: 10px; width: 900px; height: auto;" />
+  						<img src="http://isfcal.com/frc1197/148.JPG" alt="" style="border-radius: 10px; width: 900px; height: auto;"/>
+  						<img src="http://i.imgur.com/ZpHnIkD.jpg" title="source: imgur.com" alt="" style="border-radius: 10px; width: 900px; height: auto;" />
+  						<img src="http://i.imgur.com/kWzEs02.jpg" title="source: imgur.com" alt="" style="border-radius: 10px; width: 900px; height: auto;" />
+					</div>
+				</center>
+			</div>
+		</div>
+	</div>
+</center>
+
+<div id="container" style="position: absolute;">
+	<center>
+		<div id="animate" class="transbox" style="position: absolute;">
+ 	 		<h5 style="align: center;">&nbsp;We Are TorBots FRC Team 1197</h5>
+		</div>
+	</center>
+</div>	
+
+<!-- End of Photo cross fading ======================================-->
+
+<!-- ABOUT TORBOTS ===================================================================================-->
+<div class="main-container container">
+	<div class="row">
+    	<div class="col-xs-12">
+    		<a id="main-content"></a>
+    		<h1 id="about" style="padding-top: 120px;"><strong>About TorBots</strong></h1>
+        	<h2><strong>INNOVATION</strong></h2>
+				<p>We focus on proper innovation and aim for the most efficient designs in our projects. Our engineering team's ideas help the rest of the team create proper functions around the common goal of success in real life situations.</p>
+			<h2><strong>CREATIVITY</strong></h2>
+				<p>Our programming team uses Java to write the code for our robots, and fixes all of the problems that can't be fixed with a hammer or a wrench.</p>
+			<h2><strong>PERSISTENCE</strong></h2>
+				<p>Our Business Operations team handles our finances and sponsorships. They are hardworking and adaptive to the situation the team goes through. They also help make sure that there will be enough money to make the year productive.</p>
+			<p> </p>
+			 <center><a href="#Home" style="padding-top: 20px;">Back to Top</a></center>
+		</div>
+	</div>
+</div>
+<!-- End of ABOUT TORBOTS ===================================-->
+
+<!-- AWARDS===================================================================================-->
+<div class="main-container container">
+	<div class="row">
+    	<div class="col-xs-12">
+    		<a id="main-content"></a>
+    		<h1 id="awards" style="padding-top: 120px;"><strong>Awards</strong></h1>
+        	<h2><strong>2016 World Championships</strong></h2>
+				<p>We won the Galileo subdivision at the 2016 World Championships.</p>
+			<h2><strong>2016 Los Angeles Regional</strong></h2>
+				<p>We placed 1st at the 2016 L.A. Regional.</p>
+			<h2><strong>2016 Arizona West Regional Quality Award</strong></h2>
+				<p></p>
+			<h2><strong>2015 Los Angeles Regional</strong></h2>
+				<p>We placed 2nd at the 2015 L.A. Regional.</p>
+			<h2><strong>2010 Los Angeles Regional Creativity Award</strong></h2>
+				<p>We won the Creativity Award at the 2010 L.A. Regional for the most creative robot design.</p>
+			<p> </p>
+			<center><a href="#Home" style="padding-top: 20px;">Back to Top</a></center>
+		</div>
+	</div>
+</div>
+<!-- End of AWARDS===================================================================================-->
+
+<!-- BOARD MEMBERS===================================================================================-->
+<div class="main-container container">
+	<div class="row">
+    	<div class="col-xs-12">
+    		<a id="main-content"></a>
+    		<h1 id="board" style="padding-top: 120px;"><strong>Board Members <span style="font-size: 25px;" >2016</span></strong></h1>
+        	<h2><strong>President</strong></h2>
+				<p>Jon Akiyama</p>
+			<h2><strong>Head of Engineering</strong></h2>
+				<p>Jack Gietzen and Nico Evans</p>
+			<h2><strong>Head of Business</strong></h2>
+				<p>Christine</p>
+			<h2><strong>Head of CAD</strong></h2>
+				<p>Maya Nakano</p>
+			<h2><strong>Head of Electrical Engineering</strong></h2>
+				<p>Alicia Werner</p>
+			<p> </p>
+			<center><a href="#Home" style="padding-top: 20px;">Back to Top</a></center>
+		</div>
+	</div>
+</div>
+<!-- End of BOARD MEMBERS===================================================================================-->
+
+<!-- VIDEOS===================================================================================-->
+<div class="main-container container">
+	<div class="row">
+    	<div class="col-xs-12">
+    		<a id="main-content"></a>
+    		<h1 id="Videos" style="padding-top: 120px;"><strong>Videos</strong></h1>
+		</div>
+		<div class="col-xs-6">
+    		<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/ggXmqZoFcaM" width="560"></iframe>
+    		<center><a href="#Home" style="padding-top: 20px; color: red;">Back to Top</a></center>
+   		</div>
+		<div class="col-xs-6">
+    		<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/WYDwdl874UQ" width="560"></iframe></div>
+    		<center><a href="#Home" style="padding-top: 20px; color: red;">Back to Top</a></center>
+		</div>
+	</div>
+</div>
+<!-- End of VIDEOS===================================================================================-->
+
+</body>
+
+<!-- footer ======================================================================================= -->
+<footer style="margin-top: 200px;">
+	<div class="container">
+		<div class="region region-footer">
+     		<p style="text-align:center; color: white;">Copyright 2016 Torbots Team 1197</p>
+     		
+     	</div>
+ 	</div>
+</footer>
+<!-- End footer ============================================= -->
+
