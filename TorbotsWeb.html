@@ -42,8 +42,22 @@
 	.nav:hover {
 		font-color: black;	
 	}
+	@media (min-width: 0px) and (max-width: 1200px) {
+    	.navbar-collapse.collapse {
+     	   display: none !important;
+   		}
+    	.navbar-collapse.collapse.in {
+        	display: block !important;
+    	}
+    	.navbar-header .collapse, .navbar-toggle {
+        	display:block !important;
+    	}
+    	.navbar-header {
+        	float:none;
+    	}
+	}
 	h1{
-		padding-top: 120px;
+		padding-top: 65px;
 		font-family: 'Karla', sans-serif;
 		font-size: 70px;	
 	}
@@ -268,17 +282,23 @@
   animation-delay: 0;
 }
 .crop {
-    width: 900px;
-    height: 450px;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
 }
-
+.crop img {
+    margin: -150px 0 0 0;
+}
 div.transbox {
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
-  width: 880px;
+  width: 90%;
   height: 60px;
+  top: 600px;
+  left: 5%;
+  position: absolute;
 }
 
 div.transbox h5 {
@@ -287,15 +307,22 @@ div.transbox h5 {
  	font-size: 60px;
  	font-family: 'Karla', sans-serif;
  	color: #000000;
- 	width: 880px;
+ 	width: 90%;
     height: 60px;
+    position: absolute;
 }
-
+hr{
+	border: none;
+	height: 1px;	
+	width: 90%;
+	color: black;
+	background-color: black;
+}
 </style> 
 <!-- End of CSS ============================================ -->
 
 <!-- NAVAGATION BAR ================================================================================-->
-<nav id="top" class="navbar navbar-default navbar-fixed-top" style="padding: 10px; ">
+<nav id="top" class="navbar navbar-default navbar-fixed-top" style="padding: 12px; ">
 	<div class="container-fluid">
     	<!--  Helps with mobile display (Collapses navbar when window gets too small) -->
     	<div class="navbar-header">
@@ -361,9 +388,9 @@ div.transbox h5 {
        			 <li><a href="#board">Board Members</a></li>
        			 
        			 <li class="dropdown">
-          			<a href="#galleries" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries <span class="caret"></span></a>
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries <span class="caret"></span></a>
           			<ul class="dropdown-menu">
-            			<li><a href="#">Something</a></li>
+            			<li><a href="#videos">Videos</a></li>
             			<li><a href="#">Something</a></li>
             			<li><a href="#">Something</a></li>
             			<li role="separator" class="divider"></li>
@@ -392,42 +419,30 @@ div.transbox h5 {
 <!-- End of NAVIGATION BAR ======================================= -->
 
 <!-- BODY OF THE PAGE ============================================================================ -->
-<body id="Home" style="padding-top: 120px;">
+<body id="Home" style="padding-top: 100px;">
 
 <!-- PHOTO CROSS FADING ===================================================================================-->
 <center>
-	<div class="main-container container">
-		<div class="row">
-    		<div class="col-xs-12">
-				<center>
-					<div id="cf4a" class="shadow crop">
-  						<img src="http://torbots.com/sites/default/files/IMG_8435_3.JPG" alt="" style="border-radius: 10px; width: 900px; height: auto;" />
-  						<img src="http://isfcal.com/frc1197/148.JPG" alt="" style="border-radius: 10px; width: 900px; height: auto;"/>
-  						<img src="http://i.imgur.com/ZpHnIkD.jpg" title="source: imgur.com" alt="" style="border-radius: 10px; width: 900px; height: auto;" />
-  						<img src="http://i.imgur.com/kWzEs02.jpg" title="source: imgur.com" alt="" style="border-radius: 10px; width: 900px; height: auto;" />
-					</div>
-				</center>
-			</div>
+	<div id="cf4a" class="shadow crop" style="position: relative;">
+  		<img src="http://torbots.com/sites/default/files/IMG_8435_3.JPG" alt="" style="width: 100%; height: auto;" />
+  		<img src="http://isfcal.com/frc1197/148.JPG" alt="" style="width: 100%; height: auto;"/>
+  		<img src="http://i.imgur.com/ZpHnIkD.jpg" title="source: imgur.com" alt="" style="width: 100%; height: auto; " />
+  		<img src="http://i.imgur.com/kWzEs02.jpg" title="source: imgur.com" alt="" style="width: 100%; height: auto; " />
+  		<center>
+  		<div id="animate" class="transbox">
+ 	 		<h5 id="about" style="align: center;">&nbsp;We Are TorBots FRC Team 1197</h5>
 		</div>
+		</center>
 	</div>
 </center>
-
-<div id="container" ">
-	<center>
-		<div id="animate" class="transbox">
- 	 		<h5 style="align: center;">&nbsp;We Are TorBots FRC Team 1197</h5>
-		</div>
-	</center>
-</div>	
-
 <!-- End of Photo cross fading ======================================-->
 
 <!-- ABOUT TORBOTS ===================================================================================-->
-<div class="main-container container">
+<hr style="margin-top:0;">
+<div class="main-container container" style="padding-bottom: 20px;">
 	<div class="row">
     	<div class="col-xs-12">
-    		<a id="main-content"></a>
-    		<h1 id="about" style="padding-top: 120px;"><strong>About TorBots</strong></h1>
+    		<h1 id="about" style="padding-top: 0px;"><strong>About TorBots</strong></h1>
         	<h2><strong>INNOVATION</strong></h2>
 				<p>We focus on proper innovation and aim for the most efficient designs in our projects. Our engineering team's ideas help the rest of the team create proper functions around the common goal of success in real life situations.</p>
 			<h2><strong>CREATIVITY</strong></h2>
@@ -435,81 +450,90 @@ div.transbox h5 {
 			<h2><strong>PERSISTENCE</strong></h2>
 				<p>Our Business Operations team handles our finances and sponsorships. They are hardworking and adaptive to the situation the team goes through. They also help make sure that there will be enough money to make the year productive.</p>
 			<p> </p>
-			 <center><a href="#Home" style="padding-top: 20px;">Back to Top</a></center>
 		</div>
 	</div>
 </div>
+	<hr id="awards">
+		<center><a href="#Home">Back to Top</a></center>
 <!-- End of ABOUT TORBOTS ===================================-->
 
 <!-- AWARDS===================================================================================-->
-<div class="main-container container">
+<hr>
+<div class="main-container container" style="padding-bottom: 20px;">
 	<div class="row">
-    	<div class="col-xs-12">
-    		<a id="main-content"></a>
-    		<h1 id="awards" style="padding-top: 120px;"><strong>Awards</strong></h1>
+	<h1 id="awards" style="padding-top: 0px;"><strong>Awards</strong></h1>
+    	<div class="col-xs-6">
         	<h2><strong>2016 World Championships</strong></h2>
 				<p>We won the Galileo subdivision at the 2016 World Championships.</p>
 			<h2><strong>2016 Los Angeles Regional</strong></h2>
 				<p>We placed 1st at the 2016 L.A. Regional.</p>
 			<h2><strong>2016 Arizona West Regional Quality Award</strong></h2>
-				<p></p>
+				<p>We won the Quality Award at the 2016 Arizona West Regional for our quality built robot.</p>
+		</div>
+		<div class="col-xs-6">
 			<h2><strong>2015 Los Angeles Regional</strong></h2>
 				<p>We placed 2nd at the 2015 L.A. Regional.</p>
+			<h2><strong>2011 Los Angeles Regional</strong></h2>
+				<p>We placed 1st at the 2016 L.A. Regional.</p>
 			<h2><strong>2010 Los Angeles Regional Creativity Award</strong></h2>
 				<p>We won the Creativity Award at the 2010 L.A. Regional for the most creative robot design.</p>
 			<p> </p>
-			<center><a href="#Home" style="padding-top: 20px;">Back to Top</a></center>
 		</div>
 	</div>
 </div>
+	<hr id="board">
+	<center><a href="#Home">Back to Top</a></center>
 <!-- End of AWARDS===================================================================================-->
 
 <!-- BOARD MEMBERS===================================================================================-->
-<div class="main-container container">
+<hr>
+<div class="main-container container" style="padding-bottom: 20px;">
 	<div class="row">
     	<div class="col-xs-12">
-    		<a id="main-content"></a>
-    		<h1 id="board" style="padding-top: 120px;"><strong>Board Members <span style="font-size: 25px;" >2016</span></strong></h1>
+    		<h1 id="board" style="padding-top: 0px;"><strong>Board Members <span style="font-size: 25px;" >2016</span></strong></h1>
         	<h2><strong>President</strong></h2>
 				<p>Jon Akiyama</p>
 			<h2><strong>Head of Engineering</strong></h2>
 				<p>Jack Gietzen and Nico Evans</p>
+				<h2><strong>Head of Electrical Engineering</strong></h2>
+				<p>Alicia Werner</p>
 			<h2><strong>Head of Business</strong></h2>
-				<p>Christine</p>
+				<p>Christine Nonobe</p>
+				<h2><strong>Head of Programming</strong></h2>
+				<p>Masaki Asanuma</p>
 			<h2><strong>Head of CAD</strong></h2>
 				<p>Maya Nakano</p>
-			<h2><strong>Head of Electrical Engineering</strong></h2>
-				<p>Alicia Werner</p>
+			
 			<p> </p>
-			<center><a href="#Home" style="padding-top: 20px;">Back to Top</a></center>
 		</div>
 	</div>
 </div>
+	<hr id="videos">
+		<center><a href="#Home">Back to Top</a></center>
 <!-- End of BOARD MEMBERS===================================================================================-->
 
 <!-- VIDEOS===================================================================================-->
-<div class="main-container container">
+<hr>
+<div class="main-container container" style="padding-bottom: 20px;">
 	<div class="row">
     	<div class="col-xs-12">
-    		<a id="main-content"></a>
-    		<h1 id="Videos" style="padding-top: 120px;"><strong>Videos</strong></h1>
-		</div>
-		<div class="col-xs-6">
-    		<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/ggXmqZoFcaM" width="560"></iframe>
-    		<center><a href="#Home" style="padding-top: 20px; color: red;">Back to Top</a></center>
-   		</div>
-		<div class="col-xs-6">
-    		<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/WYDwdl874UQ" width="560"></iframe></div>
-    		<center><a href="#Home" style="padding-top: 20px; color: red;">Back to Top</a></center>
+			<h1 id="board" style="padding-top: 0px;"><strong>Videos</strong></h1>
+			<center>
+				<div>
+					<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/ggXmqZoFcaM" width="560"></iframe>
+					<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/WYDwdl874UQ" width="560"></iframe>
+				</div>
+			</center>
 		</div>
 	</div>
-</div>
+</div>		
+<center><a href="#Home">Back to Top</a></center>
 <!-- End of VIDEOS===================================================================================-->
 
 </body>
 
 <!-- footer ======================================================================================= -->
-<footer style="margin-top: 200px;">
+<footer>
 	<div class="container">
 		<div class="region region-footer">
      		<p style="text-align:center; color: white;">Copyright 2016 Torbots Team 1197</p>
