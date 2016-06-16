@@ -1,0 +1,297 @@
+<!-- THIS IS WHERE THE CSS GOES ============================================================--> 
+	.navbar-default {
+    	border-color: #E7E7E7;
+    	font-family: 'Karla', sans-serif;
+    	font-size: 20px;
+	}
+	.navbar{
+		background: white;	
+	}
+	.nav:hover {
+		font-color: black;	
+	}
+	@media (min-width: 0px) and (max-width: 1000px) {
+    	.navbar-collapse.collapse {
+     	   display: none !important;
+   		}
+    	.navbar-collapse.collapse.in {
+        	display: block !important;
+    	}
+    	.navbar-header .collapse, .navbar-toggle {
+        	display:block !important;
+    	}
+    	.navbar-header {
+        	float:none;
+    	}
+	}
+	h1{
+		padding-top: 65px;
+		font-family: 'Karla', sans-serif;
+		font-size: 70px;	
+	}
+	h2{
+		font-family: 'Karla', sans-serif;
+		color: d50e15;
+	}
+	
+	
+	ul {
+		list-style-type:none;
+		float: right;
+		margin:0;
+		right:0;
+		top: 0;
+		background-color: white;
+	}
+	li {
+		margin-right: 1px;
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		background-color: white;
+	}
+	li a {
+		display:block;
+		min-width:140px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		font-family: 'Karla', sans-serif;
+		font-size: 20px;
+		color: black;
+		text-decoration: none;
+	}
+	li:hover a {
+		background: #8b2528;
+		color: white;
+	}
+	li:hover ul a {
+		background: #2f3036;
+		color: white;
+		height: 40px;
+		line-height: 40px;
+	}
+	li:hover ul a:hover {
+		background: #8b2528;
+		color: #fff;
+	}	
+	li ul {
+		display: none;
+	}
+	li ul li {
+		display: inline;
+		float: none;
+	}
+	li ul li a {
+		width: auto;
+		min-width: 100px;
+		padding: 0 20px;
+	}
+	
+	
+	 /*
+	 ul {
+		list-style-type:none;
+		float: right;
+		margin:0;
+		right:0;
+		top: 0;
+	}
+	li{
+		padding: 10px 0px 20px 0px;	
+		font-color: black;
+	}
+	li a{
+		display: block;	
+	}
+	li:hover{
+		background-color: #8b2528;
+	}
+	li:hover a{
+		color: black;
+	}
+	ul:hover li:hover a{
+		background-color: #8b2528;
+	}
+	*/
+	
+	footer {
+    	padding: 25px 0;
+    	background: #010101;
+    	text-align: center;
+    	font-weight: normal;
+	}
+	p {
+		text-indent: 2.0em;
+		font-family: 'Karla', sans-serif;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 12.5% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 87.5% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#cf4a {
+  position:relative;
+  margin:0 auto;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+}
+
+#cf4a img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 40s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 40s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 40s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  animation-delay: 30s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 20s;
+  -moz-animation-delay: 20s;
+  -o-animation-delay: 20s;
+  animation-delay: 20s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -o-animation-delay: 10s;
+  animation-delay: 10s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+.crop {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.crop img {
+    margin: -150px 0 0 0;
+}
+div.transbox {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  width: 90%;
+  height: 60px;
+  top: 80%;
+  left: 5%;
+  position: absolute;
+}
+
+div.transbox h5 {
+  	margin: 0;
+ 	font-weight: bold;
+ 	font-size: 60px;
+ 	font-family: 'Karla', sans-serif;
+ 	color: #000000;
+ 	width: 90%;
+    height: 60px;
+    position: absolute;
+}
+hr{
+	border: none;
+	height: 1px;	
+	width: 90%;
+	color: black;
+	background-color: black;
+}
+body{
+	background-color: #f6f6f6;	
+}
+<!-- End of CSS ============================================ -->
