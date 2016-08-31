@@ -143,7 +143,15 @@
 
 	.photos {
 		margin: 10;
+		width:350px;
+		height:230px;
 	}
+
+    .videos {
+    	width: 560px;
+    	height: 315px;
+    }
+
 	
 @-webkit-keyframes cf4FadeInOut {
  0% {
