@@ -1,0 +1,281 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Adding Bootstrap  CSS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> <!-- Adding Google API for jQuery -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  <!-- Adding Bootstrap Javascript -->
+  
+<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'> <!-- Adding font of SIGMAR ONE -->
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'> <!-- Adding font of INDIE FLOWER -->
+<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'> <!-- Adding font KARLA -->
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script> <!-- Import the Google Maps API -->
+
+<!-- THIS IS WHERE YOU INSERT THE CSS FILE "TorbotsWeb.css" ==============================================-->
+<head>
+<link rel="stylesheet" type="text/css" href="TorbotsWeb.css">
+</head>
+<!-- End of css import -->
+
+<!--THIS IS WHERE THE JAVASCRIPT CODE GOES ============================================== -->
+ <header> 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> <!-- Adding Javascript -->
+	<script>
+		$(document).ready(function(){ <!-- Put all Javascript code inside the document ready function -->
+			
+			$('a[href^="#"]').on('click', function(event) { <!-- Looks for click and scrolls to targeted ID -->
+   	 			var target = $( $(this).attr('href') );
+  					if( target.length ) {
+        				event.preventDefault();
+        				$('html, body').animate({
+            				scrollTop: target.offset().top
+        				}, 1000);
+   	 				}
+			});
+			
+		});
+		
+	</script>
+</header> <!--End of JAVASCRIPT ==================================== -->
+
+<!-- NAVAGATION BAR ================================================================================-->
+<nav id="top" class="navbar navbar-default navbar-fixed-top" style="padding: 12px;">
+	<div class="container-fluid">
+    	<!--  Helps with mobile display (Collapses navbar when window gets too small) -->
+    	<div class="navbar-header">
+    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a href="http://torbots.com"><img src="http://torbots.com/sites/default/files/torbots%20logo_0.JPG" alt="TorBots" style="width: 150px;" /></a>
+    	</div>
+    	
+    	<!-- Collect the nav links, forms, and other content for toggling -->
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		
+      		<ul>
+      			<li><a href="TorbotsWeb.html#Home">Home<span class="sr-only">(current)</span></a></li>
+        		<li><a href="TorbotsWeb.html#about">About TorBots</a></li>
+        		<li><a href="TorbotsWeb.html#awards">Awards</a></li>
+       			 <li><a href="TorbotsWeb.html#board">Board Members</a></li>
+       			 
+       			 <li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="videos.html#videos">Videos</a></li>
+            			<li><a href="#">Photos</a></li>
+            			<li><a href="publicity.html#publicity">Publicity</a></li>
+
+          			</ul>
+       			 </li>
+       			 
+       			 <li class="dropdown">
+       			 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="contactUs.html">Mentorship</a></li>
+            			<li><a href="contactUs.html#sponsor">Sponsorship</a></li>
+            			<li><a href="contactUs.html#contact">Get In Touch!</a></li>
+            			<li><a href="contactUs.html#findUs">Find Us</a></li>
+          			</ul>
+        		</li>
+        		
+      		</ul>
+      		
+    	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- End of NAVIGATION BAR ======================================= -->
+
+<!-- BODY OF THE PAGE ============================================================================ -->
+<body id="Home" style="padding-top: 100px;">
+
+<hr id="photos">
+
+<div class="main-container container" style="padding-bottom: 20px;">
+  <div class="row">
+      <div class="col-xs-12">
+      <h1 id="board" style="padding-top: 0px;"><strong>Photos</strong></h1>
+
+      <h2 id="board" style="padding-top: 0px;"><strong>2016</strong></h2>
+      <h3 id="board" style="padding-top: 0px;"><strong>2016 World Championship</strong></h3>
+      <center>
+        <div>
+           <a  href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13124478_10153559205921288_7214480974822565260_n.jpg?oh=b92a44d517b242f2491cf065d434bdc1&oe=583AAF69">
+             <img  class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13124478_10153559205921288_7214480974822565260_n.jpg?oh=b92a44d517b242f2491cf065d434bdc1&oe=583AAF69" alt="World_everyone">
+           </a>
+
+           <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13124594_10153558042331288_5988792969415016133_n.jpg?oh=4dd561a127ba532fb1e9f92491163448&oe=58490200">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13124594_10153558042331288_5988792969415016133_n.jpg?oh=4dd561a127ba532fb1e9f92491163448&oe=58490200" alt="World_Trophie">
+          </a>
+
+           <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13102637_1082970915109462_5070947847080811914_n.jpg?oh=4b6041b88a8c1c4a089ac33b73b5a327&oe=5885FECD">
+             <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13102637_1082970915109462_5070947847080811914_n.jpg?oh=4b6041b88a8c1c4a089ac33b73b5a327&oe=5885FECD" alt="World_score">
+           </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13100810_1082839728455914_8212533357596565143_n.jpg?oh=2497c87635c9cd745f44a7af3f4198e7&oe=58515CF9">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13100810_1082839728455914_8212533357596565143_n.jpg?oh=2497c87635c9cd745f44a7af3f4198e7&oe=58515CF9" alt="World_driver">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13118963_1082839681789252_4933590284805708874_n.jpg?oh=e1c9524bacc1168e56f73bd154c839f2&oe=5841CCE0">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13118963_1082839681789252_4933590284805708874_n.jpg?oh=e1c9524bacc1168e56f73bd154c839f2&oe=5841CCE0" alt="World_Galileo">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13061934_10156860171790500_6089667486747842735_n.jpg?oh=7d8e55aa2ee70ac4121d9ad118da63c0&oe=58500C9D">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13061934_10156860171790500_6089667486747842735_n.jpg?oh=7d8e55aa2ee70ac4121d9ad118da63c0&oe=58500C9D" alt="World_Departure">
+          </a>
+
+          <a href="https://i.imgur.com/vWH9SKR.jpg">
+            <img class="photos" src="https://i.imgur.com/vWH9SKR.jpg" alt="World_jump">
+          </a>
+
+          <a href="https://i.imgur.com/9wQmRS9.jpg">
+            <img class="photos" src="https://i.imgur.com/9wQmRS9.jpg" alt="World_Jerry">
+          </a>
+
+          <a href="https://i.imgur.com/6uRXtRL.jpg">
+            <img class="photos" src="https://i.imgur.com/6uRXtRL.jpg" alt="World_famous">
+          </a>
+
+          <a href="https://i.imgur.com/KqKOm5O.jpg">
+            <img class="photos" src="https://i.imgur.com/KqKOm5O.jpg" alt="World_walk">
+          </a>
+
+          <a href="https://i.imgur.com/Spash39.jpg">
+            <img class="photos" src="https://i.imgur.com/Spash39.jpg" alt="World_driveteam">
+          </a>      
+        </div>
+      </center>
+
+      <h3 id="board" style="padding-top: 0px;"><strong>2016 Arizona Regional</strong></h3>
+      <center>
+        <div>
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13000132_10206005980852860_1534726781366914699_n.jpg?oh=8d948cedc9654caaae1b0798f7fb2b5f&oe=583F5E9B">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13000132_10206005980852860_1534726781366914699_n.jpg?oh=8d948cedc9654caaae1b0798f7fb2b5f&oe=583F5E9B" alt="Arizona_Trophies">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/l/t1.0-9/12928285_1066208420119045_3774089835468312917_n.jpg?oh=8a93306651e590e84c30f265627650a1&oe=584D6F6F">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/l/t1.0-9/12928285_1066208420119045_3774089835468312917_n.jpg?oh=8a93306651e590e84c30f265627650a1&oe=584D6F6F" alt="Arizona_setup">
+          </a>
+        </div>
+      </center>
+
+      <h3 id="board" style="padding-top: 0px;"><strong>2016 LA Regional</strong></h3>
+      <center>
+        <div>
+          <a href="ttps://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12814585_967572476668575_8479572850881776678_n.jpg?oh=16d2eceb36e0bc4d014919c6ab85f4f6&oe=583CE0A8">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12814585_967572476668575_8479572850881776678_n.jpg?oh=16d2eceb36e0bc4d014919c6ab85f4f6&oe=583CE0A8" alt="LA_banner">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/10577181_1044843525588868_6045591505659266149_n.jpg?oh=cd438ed95c98ccd57356047f88ef2d00&oe=584D0149">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/10577181_1044843525588868_6045591505659266149_n.jpg?oh=cd438ed95c98ccd57356047f88ef2d00&oe=584D0149" alt="LA_Dinner">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12814003_1044843202255567_4474976024811311780_n.jpg?oh=f4cdfdc3dad351ac86a62a2f1dbba6ff&oe=58465824">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12814003_1044843202255567_4474976024811311780_n.jpg?oh=f4cdfdc3dad351ac86a62a2f1dbba6ff&oe=58465824" alt="LA_Dinner2">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12814789_1044843198922234_8940249301084731211_n.jpg?oh=ddbfd2e34c6d3782f76827e2ae76e9d7&oe=583F1793">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12814789_1044843198922234_8940249301084731211_n.jpg?oh=ddbfd2e34c6d3782f76827e2ae76e9d7&oe=583F1793" alt="LA_Dinner3">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/995604_1044842958922258_3507814945448392384_n.jpg?oh=1fff1a54a24916c29fac80e34cbfab07&oe=58573A76">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/995604_1044842958922258_3507814945448392384_n.jpg?oh=1fff1a54a24916c29fac80e34cbfab07&oe=58573A76" alt="LA_987">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1174547_1044842482255639_243549115013228867_n.jpg?oh=bc59c812e21084602b8243c92539281d&oe=5882CF56">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1174547_1044842482255639_243549115013228867_n.jpg?oh=bc59c812e21084602b8243c92539281d&oe=5882CF56" alt="LA_final">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12065651_1044842462255641_1445883442550129211_n.jpg?oh=5fff9cbc1f21cfa53ea4fbcb744b6104&oe=58572917">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12065651_1044842462255641_1445883442550129211_n.jpg?oh=5fff9cbc1f21cfa53ea4fbcb744b6104&oe=58572917" alt="LA_pit">
+          </a>
+        </div>
+      </center>
+
+      <h3 id="board" style="padding-top: 0px;"><strong>2016 Built Season</strong></h3>
+      <center>
+        <div>
+          <a href="ttps://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12049495_10153414448251288_4231240308147147900_n.jpg?oh=ada904383b7fc342b1dc2fcb8111b3f5&oe=5884106F">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12049495_10153414448251288_4231240308147147900_n.jpg?oh=ada904383b7fc342b1dc2fcb8111b3f5&oe=5884106F" alt="Season1">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12321420_10153414447971288_7310906841824343564_n.jpg?oh=9bf1aa5451a9c75cfb1f4e29b801740e&oe=58545EA2">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12321420_10153414447971288_7310906841824343564_n.jpg?oh=9bf1aa5451a9c75cfb1f4e29b801740e&oe=58545EA2" alt="Season2">
+          </a>
+
+          
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12670173_10205453164512797_1308484871600523271_n.jpg?oh=93ff99f7817fc7f935329645e7fcf04d&oe=584E4D78">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12670173_10205453164512797_1308484871600523271_n.jpg?oh=93ff99f7817fc7f935329645e7fcf04d&oe=584E4D78" alt="Season3">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12642899_1018166361589918_6453017927203673660_n.jpg?oh=e065cbaba6a9587301a8194a01cd9187&oe=5857C4AC">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12642899_1018166361589918_6453017927203673660_n.jpg?oh=e065cbaba6a9587301a8194a01cd9187&oe=5857C4AC" alt="Season4">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12645125_1018166098256611_7091413325461498381_n.jpg?oh=8e58d72a9f5a11679d4115693fb85082&oe=585942E8">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12645125_1018166098256611_7091413325461498381_n.jpg?oh=8e58d72a9f5a11679d4115693fb85082&oe=585942E8" alt="Season5">
+          </a>
+        </div>
+      </center>
+      <br>
+
+      <h2 id="board" style="padding-top: 0px;"><strong>2015</strong></h2>
+      <h3 id="board" style="padding-top: 0px;"><strong>2015 Sleepy Hollow</strong></h3>
+      <center>
+        <div>
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12341154_10207365573753111_2325902925938314972_n.jpg?oh=d61a2afe5cef07af74671139d2d4fa8e&oe=58495EB7">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12341154_10207365573753111_2325902925938314972_n.jpg?oh=d61a2afe5cef07af74671139d2d4fa8e&oe=58495EB7" alt="SH1">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12390925_10207344650550044_3717022942652532942_n.jpg?oh=f3e02fb2f9acb5e5478be38933c9c4a3&oe=5847C904">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12390925_10207344650550044_3717022942652532942_n.jpg?oh=f3e02fb2f9acb5e5478be38933c9c4a3&oe=5847C904" alt="SH2">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12345527_988748981198323_3473207042712649886_n.jpg?oh=307e35d79ac89e5ec60bd3c6ee188d69&oe=584EC485">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12345527_988748981198323_3473207042712649886_n.jpg?oh=307e35d79ac89e5ec60bd3c6ee188d69&oe=584EC485" alt="SH3">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12313594_988746314531923_7645175234023140706_n.jpg?oh=8a6ff03b18c6831bff67ca1318276495&oe=584FCC78">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12313594_988746314531923_7645175234023140706_n.jpg?oh=8a6ff03b18c6831bff67ca1318276495&oe=584FCC78" alt="SH4">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12342272_10205141329237110_5365265383462779558_n.jpg?oh=a6a3b6e6a3192e127aad84a41c8e4b85&oe=583CDD04">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/12342272_10205141329237110_5365265383462779558_n.jpg?oh=a6a3b6e6a3192e127aad84a41c8e4b85&oe=583CDD04" alt="SH5">
+          </a>
+        </div>
+      </center>
+
+      <h3 id="board" style="padding-top: 0px;"><strong>2015 Summer Academy </strong></h3>
+      <center>
+        <div>
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/11659446_10204315347508083_7817975829161621230_n.jpg?oh=ee8fabca062c4dcaa8ef878b3d1c9aa0&oe=583C7080">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/11659446_10204315347508083_7817975829161621230_n.jpg?oh=ee8fabca062c4dcaa8ef878b3d1c9aa0&oe=583C7080" alt="SA_wood">
+          </a>
+
+          <a href="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/11695858_10204315347708088_5025684969939294530_n.jpg?oh=2a4b7f31be3ef47e930c791905f777dd&oe=584B77EB">
+            <img class="photos" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/11695858_10204315347708088_5025684969939294530_n.jpg?oh=2a4b7f31be3ef47e930c791905f777dd&oe=584B77EB" alt="SA_robot">
+          </a>
+        </div>
+      </center>
+
+    </div>
+  </div>
+</div>  
+<center><a href="#Home">Back to Top</a></center>
+        
+</body>
+<!-- End of Body =======================================================================================-->
+
+<!-- footer ======================================================================================= -->
+<footer>
+  <div class="container">
+    <div class="region region-footer">
+        <p style="display: inline-block; text-align:center; color: white;">Copyright 2016 Torbots Team 1197</p>     <p style="display: inline-block;"><a href="https://www.facebook.com/TorBots/">Facebook</a></span></p>
+        <p style="display: inline-block; text-align: right;"><a href="https://twitter.com/1197torbots">Twitter</a></p>
+        <p style="display: inline-block; text-align: right;"><a href="https://www.instagram.com/torbots1197/">Instagram</a></p>
+        <p style="display: inline-block; text-align: right;"><a href="https://plus.google.com/109394100283479002007/about">GooglePlus</a></p>
+        <p style="text-align:center; color: white;"><a href="https://www.linkedin.com/in/kencarrington">Maintained by Ken Carrington</a></p>
+        <p style="text-align:center; color: white;"><a href="https://github.com/K-Carrington/TorBots-Website">This site's source</a></p>
+      </div>
+  </div>
+</footer>
+<!-- End footer ============================================= -->
+
