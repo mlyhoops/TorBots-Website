@@ -1,0 +1,152 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Adding Bootstrap  CSS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> <!-- Adding Google API for jQuery -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  <!-- Adding Bootstrap Javascript -->
+  
+<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'> <!-- Adding font of SIGMAR ONE -->
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'> <!-- Adding font of INDIE FLOWER -->
+<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'> <!-- Adding font KARLA -->
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script> <!-- Import the Google Maps API -->
+
+<!-- THIS IS WHERE YOU INSERT THE CSS FILE "TorbotsWeb.css" ==============================================-->
+<head>
+<link rel="stylesheet" type="text/css" href="TorbotsWeb.css">
+</head>
+<!-- End of css import -->
+
+<!--THIS IS WHERE THE JAVASCRIPT CODE GOES ============================================== -->
+ <header> 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> <!-- Adding Javascript -->
+	<script>
+		$(document).ready(function(){ <!-- Put all Javascript code inside the document ready function -->
+			
+			$('a[href^="#"]').on('click', function(event) { <!-- Looks for click and scrolls to targeted ID -->
+   	 			var target = $( $(this).attr('href') );
+  					if( target.length ) {
+        				event.preventDefault();
+        				$('html, body').animate({
+            				scrollTop: target.offset().top
+        				}, 1000);
+   	 				}
+			});
+			
+		});
+		
+	</script>
+</header> <!--End of JAVASCRIPT ==================================== -->
+
+<!-- NAVAGATION BAR ================================================================================-->
+<nav id="top" class="navbar navbar-default navbar-fixed-top" style="padding: 12px;">
+	<div class="container-fluid">
+    	<!--  Helps with mobile display (Collapses navbar when window gets too small) -->
+    	<div class="navbar-header">
+    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a href="http://torbots.com"><img src="http://torbots.com/sites/default/files/torbots%20logo_0.JPG" alt="TorBots" style="width: 150px;" /></a>
+    	</div>
+    	
+    	<!-- Collect the nav links, forms, and other content for toggling -->
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      		
+      		<ul>
+      			<li><a href="TorbotsWeb.html#Home">Home<span class="sr-only">(current)</span></a></li>
+        		<li><a href="TorbotsWeb.html#about">About TorBots</a></li>
+        		<li><a href="TorbotsWeb.html#awards">Awards</a></li>
+       			 <li><a href="TorbotsWeb.html#board">Board Members</a></li>
+       			 
+       			 <li class="dropdown">
+          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galleries <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="#videos">Videos</a></li>
+            			<li><a href="photos.html#photos">Photos</a></li>
+            			<li><a href="publicity.html#publicity">Publicity</a></li>
+
+          			</ul>
+       			 </li>
+       			 
+       			 <li class="dropdown">
+       			 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+          			<ul class="dropdown-menu">
+            			<li><a href="contactUs.html">Mentorship</a></li>
+            			<li><a href="contactUs.html#sponsor">Sponsorship</a></li>
+            			<li><a href="contactUs.html#contact">Get In Touch!</a></li>
+            			<li><a href="contactUs.html#findUs">Find Us</a></li>
+          			</ul>
+        		</li>
+        		
+      		</ul>
+      		
+    	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- End of NAVIGATION BAR ======================================= -->
+
+<!-- BODY OF THE PAGE ============================================================================ -->
+<body id="Home" style="padding-top: 100px;">
+
+<hr id="videos">
+
+<div class="main-container container" style="padding-bottom: 20px;">
+	<div class="row">
+    <div class="col-xs-12">
+			<h1 id="board" style="padding-top: 0px;"><strong>Videos</strong></h1>
+
+      <h2 id="board" style="padding-top: 0px;"><strong>2016</strong></h2>
+			<center>
+        <div>
+          <iframe class="videos" src="https://www.youtube.com/embed/gGkev-MsyaQ" frameborder="0" allowfullscreen></iframe>
+          <p>Look Back</p>
+          <br>
+          <iframe class="videos" src="https://www.youtube.com/embed/sAGVBRZL10Q" frameborder="0" allowfullscreen></iframe>
+          <p>Meet BanTor</p>
+          <br>
+          <iframe class="videos" src="https://www.youtube.com/embed/WYDwdl874UQ" frameborder="0" allowfullscreen></iframe>
+          <p>Our Chairman's Submission</p>
+        </div>
+      </center>
+
+      <h2 id="board" style="padding-top: 0px;"><strong>2015</strong></h2>
+      <center>
+        <div>
+          <iframe class="videos" src="https://www.youtube.com/embed/_Y9dH-DFAsE" frameborder="0" allowfullscreen></iframe>
+          <p>A Year in review</p>
+          <br>
+          <iframe class="videos" src="https://www.youtube.com/embed/4kqt4HlMhBk" frameborder="0" allowfullscreen></iframe>
+          <p>Practice Kickoff 2015</p>
+        </div>
+      </center>
+
+      <h2 id="board" style="padding-top: 0px;"><strong>More BanTor</strong></h2>
+      <center>
+				<div>
+					<iframe class="videos" allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/ggXmqZoFcaM" ></iframe>
+          <p></p>
+          <br>
+				</div>
+			</center>
+		</div>
+	</div>
+</div>
+<hr id="">	
+<center><a href="#Home">Back to Top</a></center>
+        
+</body>
+<!-- End of Body =======================================================================================-->
+
+<!-- footer ======================================================================================= -->
+<footer>
+  <div class="container">
+    <div class="region region-footer">
+      <p style="display: inline-block; text-align:center; color: white;">Copyright 2016 Torbots Team 1197</p>     <p style="display: inline-block;"><a href="https://www.facebook.com/TorBots/">Facebook</a></span></p>
+      <p style="display: inline-block; text-align: right;"><a href="https://twitter.com/1197torbots">Twitter</a></p>
+      <p style="display: inline-block; text-align: right;"><a href="https://www.instagram.com/torbots1197/">Instagram</a></p>
+      <p style="display: inline-block; text-align: right;"><a href="https://plus.google.com/109394100283479002007/about">GooglePlus</a></p>
+      <p style="text-align:center; color: white;"><a href="https://www.linkedin.com/in/kencarrington">Maintained by Ken Carrington</a></p>
+      <p style="text-align:center; color: white;"><a href="https://github.com/K-Carrington/TorBots-Website">This site's source</a></p>
+    </div>
+  </div>
+</footer>
+<!-- End footer ============================================= -->
