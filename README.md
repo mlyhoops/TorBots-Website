@@ -1,7 +1,6 @@
 # TorBots-Website
-This was the code for the TorBots Website in 2016. It has now been updated as someone else has taken over the site design.
+This was the code for the TorBots Website in 2016. 
 
-www.torbots.com
+The site has since been updated and is now hosted on WIX and is no longer using the code.
 
-Before making any changes please go over the tutorial 
-https://guides.github.com/activities/hello-world/
+www.torbots.com - Now www.team1197.com 
